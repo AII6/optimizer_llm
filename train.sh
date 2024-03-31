@@ -1,5 +1,5 @@
 torchrun --nproc_per_node=8 --master_port=1229 train.py \
-    --model_name_or_path ../llama_ckpt \
+    --model_name_or_path meta-llama/Llama-2-7b-hf \
     --data_path ./alpaca_data.json \
     --bf16 True \
     --output_dir ../output \
